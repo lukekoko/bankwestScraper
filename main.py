@@ -7,7 +7,7 @@ import logging
 import logging.config
 import pathlib
 from config import config
-import pandas
+import pandas as pd
 
 settings = config.settings
 logging.config.fileConfig(
@@ -27,6 +27,7 @@ def browserConfig():
     chromeDriver = "./config/chromedriver"
 
     browser = webdriver.Chrome(executable_path=chromeDriver, options=chrome_options)
+    browser.set_window_size(1080,1920)
     return browser
 
 def scraper():
@@ -44,7 +45,19 @@ def scraper():
 
     logger.info("Downloading")
     browser.find_element_by_id("_ctl0_ContentButtonsRight_btnExport").click()
+    logger.info("Download finished")
     time.sleep(5)
 
+def readCSV():
+    csvFiles = pathlib.Path('./downloads').glob("*.csv")
+    removeList = ['NAR', 'TFC', 'TFD']
+    columns = ['Transaction Date', 'Narration', 'Debit', 'Credit', 'Balance', 'Transaction Type']
+    for file in csvFiles:
+        initDF = pd.read_csv(file)
+        filteredDF = initDF[columns]
+        df = filteredDF[~filteredDF['Transaction Type'].isin(removeList)]
+        print(df['Credit'].sum())
+
 if __name__ == "__main__":
-    scraper()
+    # scraper()
+    readCSV()
