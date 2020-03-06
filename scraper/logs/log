@@ -811,3 +811,14 @@ sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate en
 2020-03-06 18:46:02,328 - INFO - Connecting to database
 2020-03-06 18:46:02,538 - INFO - Inserting data into database
 2020-03-06 18:46:05,268 - INFO - Removing file
+2020-03-06 20:09:49,577 - INFO - Starting scraper
+2020-03-06 20:09:49,578 - INFO - Configuring browser
+2020-03-06 20:10:00,230 - INFO - Logging in
+2020-03-06 20:10:03,022 - INFO - Downloading
+2020-03-06 20:10:04,047 - INFO - Download finished
+2020-03-06 20:10:09,052 - INFO - Starting read csv
+2020-03-06 20:10:09,054 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 20:10:09,091 - INFO - Processing data
+2020-03-06 20:10:09,111 - INFO - Connecting to database
+2020-03-06 20:10:09,306 - INFO - Inserting data into database
+2020-03-06 20:10:11,959 - INFO - Removing file
