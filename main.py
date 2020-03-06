@@ -8,6 +8,9 @@ import logging.config
 import pathlib
 from config import config
 import pandas as pd
+import numpy as np
+import sqlalchemy
+import sys
 
 settings = config.settings
 logging.config.fileConfig(
@@ -19,20 +22,21 @@ def browserConfig():
     logger.info("Configuring browser")
     chrome_options = Options()  
     chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--log-level=3")
     prefs = {
         'download.default_directory' : str(pathlib.Path('./downloads/').resolve()),
         "directory_upgrade": True
     }
     chrome_options.add_experimental_option('prefs', prefs)
-    chromeDriver = "./config/chromedriver"
+    chromeDriver = settings['chrome_driver']
 
     browser = webdriver.Chrome(executable_path=chromeDriver, options=chrome_options)
-    browser.set_window_size(1080,1920)
     return browser
 
 def scraper():
-    logger.info("Starting")
+    logger.info("Starting scraper")
     browser = browserConfig()
+    browser.set_window_size(1024,768)
     browser.get(settings['url'])
 
     logger.info("Logging in")
@@ -41,23 +45,74 @@ def scraper():
     browser.find_element_by_id("AuthUC_btnLogin").click()
 
     browser.find_element_by_link_text(settings['account']).click()
-    browser.find_element_by_tag_name('html').send_keys(Keys.END)
 
     logger.info("Downloading")
-    browser.find_element_by_id("_ctl0_ContentButtonsRight_btnExport").click()
+    browser.find_element_by_id("_ctl0_ContentButtonsRight_btnExport").send_keys(Keys.ENTER)
     logger.info("Download finished")
     time.sleep(5)
 
 def readCSV():
+    logger.info("Starting read csv")
     csvFiles = pathlib.Path('./downloads').glob("*.csv")
     removeList = ['NAR', 'TFC', 'TFD']
-    columns = ['Transaction Date', 'Narration', 'Debit', 'Credit', 'Balance', 'Transaction Type']
+    columns = ['account', 'date', 'description', 'transactionType', 'balance', 'transactionAmount']
+    transactionTypes = {
+        'WDC': 'Debit',
+        'WDL': 'Debit', 
+        'DEP': 'Credit',
+        'WDI': 'Debit'
+    }
     for file in csvFiles:
+        logger.info('Reading csv file: {}'.format(str(file).split('\\')[1]))
         initDF = pd.read_csv(file)
-        filteredDF = initDF[columns]
-        df = filteredDF[~filteredDF['Transaction Type'].isin(removeList)]
-        print(df['Credit'].sum())
+        logger.info('Processing data')
+        initDF.rename(columns = {'Transaction Date': 'date', 'Narration': 'description', 'Transaction Type': 'transactionType', 'Balance': 'balance'}, inplace=True)
+        df = initDF[~initDF['transactionType'].isin(removeList)]
+        df = df.replace({'transactionType': transactionTypes})
+        df['account'] = df['BSB Number'] + ' ' + df['Account Number'].astype(str)
+        df['transactionAmount'] = df[['transactionType', 'Debit', 'Credit']].apply(transactionTypeCheck, axis=1)
+        df['date'] = pd.to_datetime(df['date'])
+        exportDF = df[columns]
+        successful = insertIntoDB(exportDF)
+        if successful:
+            logger.info('Removing file')
+            file.unlink()
+        else:
+            logger.error('Data was not imported')
+
+
+def transactionTypeCheck(row):
+    if (row['transactionType'] == 'Debit'):
+        return row['Debit']
+    else:
+        return row['Credit']
+
+def insertIntoDB(df):
+    try:
+        logger.info('Connecting to database')
+        connectionString = 'mysql+pymysql://{}:{}@{}:{}/{}'.format(settings['sql_user'], settings['sql_pass'], settings['sql_host'], settings['sql_port'], settings['sql_database'])
+        engine = sqlalchemy.create_engine(connectionString)
+        engine.connect()
+    except sqlalchemy.exc.OperationalError:
+        logger.error('Could not connect to database')
+        return False
+    try: 
+        logger.info('Inserting data into database')
+        df.to_sql('temp', engine, if_exists='replace', index=False)
+        with engine.begin() as conn:
+            # query to insert temp table into main transactions table to ensure no duplicate entries are entered
+            sqlQuery = """
+                INSERT INTO transactions (account, date, description, transactionType, balance, transactionAmount)
+                SELECT t1.account, t1.date, t1.description, t1.transactionType, t1.balance, t1.transactionAmount FROM temp t1
+                WHERE NOT EXISTS 
+                (SELECT 1 FROM transactions t2 WHERE t1.date = t2.date AND t1.description = t2.description AND t1.balance = t2.balance AND t1.transactionAmount = t2.transactionAmount)
+            """
+            conn.execute(sqlQuery)
+        return True
+    except (sqlalchemy.exc.OperationalError, sqlalchemy.exc.IntegrityError):
+        logger.error('Could not insert into database')
+        return False
 
 if __name__ == "__main__":
-    # scraper()
+    scraper()
     readCSV()

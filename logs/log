@@ -6,3 +6,808 @@
 2020-03-05 21:25:01,024 - INFO - Configuring browser
 2020-03-05 21:25:05,302 - INFO - Logging in
 2020-03-05 21:25:10,294 - INFO - Downloading
+2020-03-06 00:53:46,189 - INFO - Starting
+2020-03-06 00:53:46,190 - INFO - Configuring browser
+2020-03-06 00:53:54,773 - INFO - Starting
+2020-03-06 00:53:54,773 - INFO - Configuring browser
+2020-03-06 00:57:26,316 - INFO - Starting
+2020-03-06 00:57:26,317 - INFO - Configuring browser
+2020-03-06 00:57:38,268 - INFO - Starting
+2020-03-06 00:57:38,268 - INFO - Configuring browser
+2020-03-06 00:57:50,025 - INFO - Logging in
+2020-03-06 00:57:53,754 - INFO - Downloading
+2020-03-06 00:58:25,843 - INFO - Starting
+2020-03-06 00:58:25,843 - INFO - Configuring browser
+2020-03-06 00:58:36,557 - INFO - Logging in
+2020-03-06 00:58:39,396 - INFO - Downloading
+2020-03-06 00:59:02,627 - INFO - Starting
+2020-03-06 00:59:02,628 - INFO - Configuring browser
+2020-03-06 00:59:08,910 - INFO - Logging in
+2020-03-06 00:59:11,388 - INFO - Downloading
+2020-03-06 01:00:26,926 - INFO - Starting
+2020-03-06 01:00:26,927 - INFO - Configuring browser
+2020-03-06 01:00:37,644 - INFO - Logging in
+2020-03-06 01:00:41,981 - INFO - Downloading
+2020-03-06 01:05:16,775 - INFO - Starting
+2020-03-06 01:05:16,775 - INFO - Configuring browser
+2020-03-06 01:05:27,518 - INFO - Logging in
+2020-03-06 01:05:31,021 - INFO - Downloading
+2020-03-06 01:07:49,274 - INFO - Starting
+2020-03-06 01:07:49,275 - INFO - Configuring browser
+2020-03-06 01:07:59,947 - INFO - Logging in
+2020-03-06 01:08:03,050 - INFO - Downloading
+2020-03-06 01:10:35,932 - INFO - Starting
+2020-03-06 01:10:35,932 - INFO - Configuring browser
+2020-03-06 01:10:46,536 - INFO - Logging in
+2020-03-06 01:10:49,467 - INFO - Downloading
+2020-03-06 01:10:50,393 - INFO - Download finished
+2020-03-06 01:11:26,878 - INFO - Starting
+2020-03-06 01:11:26,879 - INFO - Configuring browser
+2020-03-06 01:11:37,404 - INFO - Logging in
+2020-03-06 01:11:40,267 - INFO - Downloading
+2020-03-06 01:11:41,243 - INFO - Download finished
+2020-03-06 17:57:23,807 - INFO - Starting read csv
+2020-03-06 17:57:23,820 - INFO - Reading csv file
+2020-03-06 17:57:59,023 - INFO - Starting read csv
+2020-03-06 17:58:10,905 - INFO - Starting read csv
+2020-03-06 17:58:10,906 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:00:49,220 - INFO - Starting read csv
+2020-03-06 18:00:49,221 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:00:49,225 - INFO - Processing data
+2020-03-06 18:00:49,243 - INFO - Connecting to database
+2020-03-06 18:00:49,275 - INFO - Inserting data into database
+2020-03-06 18:00:59,304 - ERROR - Could not insert into database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 88, in readCSV
+    exportDF.to_sql('transactions', engine, if_exists='append', index=False)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\generic.py", line 2653, in to_sql
+    sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 512, in to_sql
+    pandas_sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1316, in to_sql
+    table.create()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 644, in create
+    if self.exists():
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 631, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1340, in has_table
+    return self.connectable.run_callable(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2162, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-06 18:02:27,119 - INFO - Starting read csv
+2020-03-06 18:02:27,120 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:02:27,123 - INFO - Processing data
+2020-03-06 18:02:27,146 - INFO - Connecting to database
+2020-03-06 18:02:37,184 - ERROR - Could not connect to database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 84, in readCSV
+    engine.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2209, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2306, in raw_connection
+    return self._wrap_pool_connect(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-06 18:02:37,262 - INFO - Inserting data into database
+2020-03-06 18:02:47,265 - ERROR - Could not insert into database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 89, in readCSV
+    exportDF.to_sql('transactions', engine, if_exists='append', index=False)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\generic.py", line 2653, in to_sql
+    sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 512, in to_sql
+    pandas_sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1316, in to_sql
+    table.create()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 644, in create
+    if self.exists():
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 631, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1340, in has_table
+    return self.connectable.run_callable(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2162, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-06 18:02:53,942 - INFO - Starting read csv
+2020-03-06 18:02:53,943 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:02:53,946 - INFO - Processing data
+2020-03-06 18:02:53,971 - INFO - Connecting to database
+2020-03-06 18:03:04,012 - ERROR - Could not connect to database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 84, in readCSV
+    engine.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2209, in connect
+    return self._connection_cls(self, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 103, in __init__
+    else engine.raw_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2306, in raw_connection
+    return self._wrap_pool_connect(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 303, in unique_connection
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-06 18:03:16,939 - INFO - Starting read csv
+2020-03-06 18:03:16,940 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:03:16,944 - INFO - Processing data
+2020-03-06 18:03:16,958 - INFO - Connecting to database
+2020-03-06 18:03:26,997 - ERROR - Could not connect to database
+2020-03-06 18:04:18,484 - INFO - Starting read csv
+2020-03-06 18:04:18,485 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:04:18,488 - INFO - Processing data
+2020-03-06 18:04:18,510 - INFO - Connecting to database
+2020-03-06 18:04:39,281 - INFO - Starting read csv
+2020-03-06 18:04:39,282 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:04:39,286 - INFO - Processing data
+2020-03-06 18:04:39,300 - INFO - Connecting to database
+2020-03-06 18:05:28,579 - INFO - Starting read csv
+2020-03-06 18:05:28,579 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:05:28,583 - INFO - Processing data
+2020-03-06 18:05:28,603 - INFO - Connecting to database
+2020-03-06 18:06:07,693 - INFO - Starting read csv
+2020-03-06 18:06:07,694 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:06:07,698 - INFO - Processing data
+2020-03-06 18:06:07,719 - INFO - Connecting to database
+2020-03-06 18:06:17,759 - ERROR - Could not connect to database
+2020-03-06 18:06:17,759 - INFO - Inserting data into database
+2020-03-06 18:06:27,763 - ERROR - Could not insert into database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 91, in readCSV
+    exportDF.to_sql('transactions', engine, if_exists='append', index=False)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\generic.py", line 2653, in to_sql
+    sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 512, in to_sql
+    pandas_sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1316, in to_sql
+    table.create()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 644, in create
+    if self.exists():
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 631, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1340, in has_table
+    return self.connectable.run_callable(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2162, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2242, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2279, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1547, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 2276, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 773, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\pool\base.py", line 652, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\default.py", line 489, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.1.101' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-06 18:07:05,946 - INFO - Starting read csv
+2020-03-06 18:07:05,947 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:07:05,951 - INFO - Processing data
+2020-03-06 18:07:05,965 - INFO - Connecting to database
+2020-03-06 18:07:16,007 - ERROR - Could not connect to database
+2020-03-06 18:07:32,860 - INFO - Starting read csv
+2020-03-06 18:07:32,860 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:07:32,864 - INFO - Processing data
+2020-03-06 18:07:32,877 - INFO - Connecting to database
+2020-03-06 18:07:33,091 - INFO - Inserting data into database
+2020-03-06 18:09:43,075 - INFO - Starting read csv
+2020-03-06 18:09:43,076 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:09:43,079 - INFO - Processing data
+2020-03-06 18:09:43,099 - INFO - Connecting to database
+2020-03-06 18:09:43,300 - INFO - Inserting data into database
+2020-03-06 18:09:50,137 - INFO - Starting read csv
+2020-03-06 18:09:50,138 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:09:50,141 - INFO - Processing data
+2020-03-06 18:09:50,161 - INFO - Connecting to database
+2020-03-06 18:09:50,360 - INFO - Inserting data into database
+2020-03-06 18:10:14,539 - INFO - Starting read csv
+2020-03-06 18:10:14,540 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:10:14,544 - INFO - Processing data
+2020-03-06 18:10:14,573 - INFO - Connecting to database
+2020-03-06 18:10:14,779 - INFO - Inserting data into database
+2020-03-06 18:15:41,421 - INFO - Starting read csv
+2020-03-06 18:15:41,422 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:15:41,427 - INFO - Processing data
+2020-03-06 18:15:41,453 - INFO - Connecting to database
+2020-03-06 18:15:41,646 - INFO - Inserting data into database
+2020-03-06 18:16:15,676 - INFO - Starting read csv
+2020-03-06 18:16:15,677 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:16:15,680 - INFO - Processing data
+2020-03-06 18:16:15,712 - INFO - Connecting to database
+2020-03-06 18:16:15,946 - INFO - Inserting data into database
+2020-03-06 18:20:04,828 - INFO - Starting read csv
+2020-03-06 18:20:04,829 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:20:04,832 - INFO - Processing data
+2020-03-06 18:20:04,866 - INFO - Connecting to database
+2020-03-06 18:20:05,083 - INFO - Inserting data into database
+2020-03-06 18:20:40,370 - INFO - Starting read csv
+2020-03-06 18:20:40,372 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:20:40,376 - INFO - Processing data
+2020-03-06 18:20:40,406 - INFO - Connecting to database
+2020-03-06 18:20:40,624 - INFO - Inserting data into database
+2020-03-06 18:21:06,313 - INFO - Starting read csv
+2020-03-06 18:21:06,314 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:21:06,319 - INFO - Processing data
+2020-03-06 18:21:06,345 - INFO - Connecting to database
+2020-03-06 18:21:06,563 - INFO - Inserting data into database
+2020-03-06 18:21:06,639 - ERROR - Could not insert into database
+Traceback (most recent call last):
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1225, in _execute_context
+    self.dialect.do_executemany(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 148, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 195, in executemany
+    return self._do_execute_many(q_prefix, q_values, q_postfix, args,
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2020-04-03 00:00:00-PP*5624CODE 4029357733 AUS-59.97-2.00' for key 'transactions.key'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 94, in insertIntoDB
+    df.to_sql('transactions', engine, if_exists='append', index=False)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\generic.py", line 2653, in to_sql
+    sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 512, in to_sql
+    pandas_sql.to_sql(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 1317, in to_sql
+    table.insert(chunksize, method=method)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 755, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\sql.py", line 669, in _execute_insert
+    conn.execute(self.table.insert(), data)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 982, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\sql\elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1095, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1476, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\engine\base.py", line 1225, in _execute_context
+    self.dialect.do_executemany(
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 148, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 195, in executemany
+    return self._do_execute_many(q_prefix, q_values, q_postfix, args,
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\iNoth\AppData\Local\Programs\Python\Python38\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry '2020-04-03 00:00:00-PP*5624CODE 4029357733 AUS-59.97-2.00' for key 'transactions.key'")
+[SQL: INSERT INTO transactions (account, date, description, `transactionType`, balance, `transactionAmount`) VALUES (%(account)s, %(date)s, %(description)s, %(transactionType)s, %(balance)s, %(transactionAmount)s)]
+[parameters: ({'account': '302-970 258848', 'date': datetime.datetime(2020, 4, 3, 0, 0), 'description': 'PAYPAL *QIQICAI201 4029357733 AUS', 'transactionType': 'Debit', 'balance': 52.78, 'transactionAmount': 7.19}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 4, 3, 0, 0), 'description': 'PP*5624CODE 4029357733 AUS', 'transactionType': 'Debit', 'balance': 59.97, 'transactionAmount': 2.0}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 4, 3, 0, 0), 'description': 'PAYPAL *NASAPEARCE 4029357733 AUS', 'transactionType': 'Debit', 'balance': 61.97, 'transactionAmount': 20.95}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 4, 3, 0, 0), 'description': 'PAYPAL *WINDSCRIBE 4029357733 ON CAN', 'transactionType': 'Debit', 'balance': 82.92, 'transactionAmount': 3.33}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 2, 3, 0, 0), 'description': 'PAYPAL AUSTRALIA 1008162771928', 'transactionType': 'Debit', 'balance': 36.25, 'transactionAmount': 4.49}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 2, 3, 0, 0), 'description': 'PAYPAL AUSTRALIA 1008161434798', 'transactionType': 'Debit', 'balance': 40.74, 'transactionAmount': 9.95}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 2, 3, 0, 0), 'description': 'PAYPAL AUSTRALIA 1008145711386', 'transactionType': 'Debit', 'balance': 50.69, 'transactionAmount': 19.11}, {'account': '302-970 258848', 'date': datetime.datetime(2020, 2, 3, 0, 0), 'description': 'ROMEOS IGA OXFORD DARLINGHURST AUS', 'transactionType': 'Debit', 'balance': 69.8, 'transactionAmount': 3.32}  ... displaying 10 of 104 total bound parameter sets ...  {'account': '302-970 258848', 'date': datetime.datetime(2019, 11, 13, 0, 0), 'description': 'PAYPAL *END. 4029357733 AUS', 'transactionType': 'Debit', 'balance': 59.9, 'transactionAmount': 367.2}, {'account': '302-970 258848', 'date': datetime.datetime(2019, 8, 11, 0, 0), 'description': 'KFC LAKEMBA LAKEMBA AUS', 'transactionType': 'Debit', 'balance': 35.1, 'transactionAmount': 13.45})]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+2020-03-06 18:21:11,996 - INFO - Starting read csv
+2020-03-06 18:21:11,997 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:21:12,000 - INFO - Processing data
+2020-03-06 18:21:12,027 - INFO - Connecting to database
+2020-03-06 18:21:12,233 - INFO - Inserting data into database
+2020-03-06 18:21:12,323 - ERROR - Could not insert into database
+2020-03-06 18:21:41,943 - INFO - Starting read csv
+2020-03-06 18:21:41,944 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:21:41,948 - INFO - Processing data
+2020-03-06 18:21:41,975 - INFO - Connecting to database
+2020-03-06 18:21:42,173 - INFO - Inserting data into database
+2020-03-06 18:30:01,580 - INFO - Starting read csv
+2020-03-06 18:30:01,581 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:30:01,584 - INFO - Processing data
+2020-03-06 18:30:01,599 - INFO - Connecting to database
+2020-03-06 18:30:01,808 - INFO - Inserting data into database
+2020-03-06 18:30:29,614 - INFO - Starting read csv
+2020-03-06 18:30:29,615 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:30:29,619 - INFO - Processing data
+2020-03-06 18:30:29,638 - INFO - Connecting to database
+2020-03-06 18:30:29,917 - INFO - Inserting data into database
+2020-03-06 18:40:18,369 - INFO - Starting read csv
+2020-03-06 18:40:18,387 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:40:18,390 - INFO - Processing data
+2020-03-06 18:40:18,410 - INFO - Connecting to database
+2020-03-06 18:40:18,611 - INFO - Inserting data into database
+2020-03-06 18:42:06,479 - INFO - Starting scraper
+2020-03-06 18:42:06,479 - INFO - Configuring browser
+2020-03-06 18:42:18,252 - INFO - Logging in
+2020-03-06 18:42:21,478 - INFO - Downloading
+2020-03-06 18:42:22,719 - INFO - Download finished
+2020-03-06 18:42:27,720 - INFO - Starting read csv
+2020-03-06 18:42:27,722 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:42:27,757 - INFO - Processing data
+2020-03-06 18:42:27,783 - INFO - Connecting to database
+2020-03-06 18:42:28,000 - INFO - Inserting data into database
+2020-03-06 18:43:43,309 - INFO - Starting scraper
+2020-03-06 18:43:43,309 - INFO - Configuring browser
+2020-03-06 18:43:54,275 - INFO - Logging in
+2020-03-06 18:43:57,132 - INFO - Downloading
+2020-03-06 18:43:58,043 - INFO - Download finished
+2020-03-06 18:44:03,045 - INFO - Starting read csv
+2020-03-06 18:44:03,047 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:44:03,063 - INFO - Processing data
+2020-03-06 18:44:03,092 - INFO - Connecting to database
+2020-03-06 18:44:03,299 - INFO - Inserting data into database
+2020-03-06 18:44:06,050 - INFO - Removing file
+2020-03-06 18:45:42,389 - INFO - Starting scraper
+2020-03-06 18:45:42,390 - INFO - Configuring browser
+2020-03-06 18:45:53,579 - INFO - Logging in
+2020-03-06 18:45:56,412 - INFO - Downloading
+2020-03-06 18:45:57,283 - INFO - Download finished
+2020-03-06 18:46:02,285 - INFO - Starting read csv
+2020-03-06 18:46:02,287 - INFO - Reading csv file: 302-970 0258848_transaction_06_03_2020.csv
+2020-03-06 18:46:02,306 - INFO - Processing data
+2020-03-06 18:46:02,328 - INFO - Connecting to database
+2020-03-06 18:46:02,538 - INFO - Inserting data into database
+2020-03-06 18:46:05,268 - INFO - Removing file
