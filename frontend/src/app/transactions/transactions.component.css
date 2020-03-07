@@ -1,0 +1,9 @@
+table {
+  width: 100%;
+}
+
+th.mat-header-cell  {
+  /* font-weight: bold; */
+  font-size: medium;
+  color: black;
+}
