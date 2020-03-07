@@ -6,7 +6,7 @@ import datetime
 
 class TransactionBase(BaseModel):
     account: str
-    date: str
+    date: datetime.date
     description: str
     transactionType: str
     balance: float

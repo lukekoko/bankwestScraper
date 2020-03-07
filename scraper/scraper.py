@@ -13,6 +13,9 @@ import sys
 
 # setting up logging
 settings = config.settings
+# create logs folder if doesn't exist
+pathlib.Path('./logs/').mkdir(exist_ok=True)
+
 logging.config.fileConfig(
     config.settings["logger_config"], disable_existing_loggers=False
 )
@@ -78,7 +81,7 @@ def readCSV():
         # creating new columns for account, ammount and converting date to datetime object
         df['account'] = df['BSB Number'] + ' ' + df['Account Number'].astype(str)
         df['transactionAmount'] = df[['transactionType', 'Debit', 'Credit']].apply(transactionTypeCheck, axis=1)
-        df['date'] = pd.to_datetime(df['date'])
+        df['date'] = pd.to_datetime(df['date'], dayfirst=True, infer_datetime_format=True).dt.strftime('%Y-%m-%d')
         # filtering based on needed columns
         exportDF = df[columns]
         # Inserting data into database
