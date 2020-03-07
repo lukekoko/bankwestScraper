@@ -66,7 +66,8 @@ def readCSV():
         'WDC': 'Debit',
         'WDL': 'Debit', 
         'DEP': 'Credit',
-        'WDI': 'Debit'
+        'WDI': 'Debit',
+        'PAY': 'Credit'
     }
     for file in csvFiles:
         logger.info('Reading csv file: {}'.format(str(file).split('\\')[1]))
@@ -79,6 +80,8 @@ def readCSV():
         # mapping transaction codes with names
         df = df.replace({'transactionType': transactionTypes})
         # creating new columns for account, ammount and converting date to datetime object
+        df['Debit'] = df['Debit'].abs()
+        df['Credit'] = df['Credit'].abs()
         df['account'] = df['BSB Number'] + ' ' + df['Account Number'].astype(str)
         df['transactionAmount'] = df[['transactionType', 'Debit', 'Credit']].apply(transactionTypeCheck, axis=1)
         df['date'] = pd.to_datetime(df['date'], dayfirst=True, infer_datetime_format=True).dt.strftime('%Y-%m-%d')

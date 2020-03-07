@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule }    from '@angular/common/http';
 
 // material components
+import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -40,6 +41,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { SubscriptionsComponent } from './subscriptions/subscriptions.component';
+import { SettingsComponent } from './settings/settings.component';
+import { TransactionDialogComponent } from './transactions/transaction-dialog/transaction-dialog.component';
 
 
 @NgModule({
@@ -47,12 +51,16 @@ import { LayoutModule } from '@angular/cdk/layout';
     AppComponent,
     TransactionsComponent,
     DashboardComponent,
+    SubscriptionsComponent,
+    SettingsComponent,
+    TransactionDialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatNativeDateModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
