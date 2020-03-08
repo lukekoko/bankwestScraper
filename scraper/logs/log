@@ -1,59 +1,33 @@
-2020-03-07 10:30:55,885 - INFO - Starting scraper
-2020-03-07 10:30:55,886 - INFO - Configuring browser
-2020-03-07 10:31:08,170 - INFO - Logging in
-2020-03-07 10:31:11,285 - INFO - Downloading
-2020-03-07 10:31:12,255 - INFO - Download finished
-2020-03-07 10:31:17,256 - INFO - Starting read csv
-2020-03-07 10:31:17,258 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
-2020-03-07 10:31:17,279 - INFO - Processing data
-2020-03-07 10:31:17,299 - INFO - Connecting to database
-2020-03-07 10:31:17,514 - INFO - Inserting data into database
-2020-03-07 10:31:20,244 - INFO - Removing csv file
-2020-03-07 16:38:43,004 - INFO - Starting scraper
-2020-03-07 16:38:43,004 - INFO - Configuring browser
-2020-03-07 16:38:56,150 - INFO - Logging in
-2020-03-07 16:38:58,887 - INFO - Downloading
-2020-03-07 16:38:59,828 - INFO - Download finished
-2020-03-07 16:39:04,830 - INFO - Starting read csv
-2020-03-07 16:39:04,830 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
-2020-03-07 16:39:04,853 - INFO - Processing data
-2020-03-07 16:39:04,875 - INFO - Connecting to database
-2020-03-07 16:39:05,083 - INFO - Inserting data into database
-2020-03-07 16:39:07,903 - INFO - Removing csv file
-2020-03-07 21:33:46,336 - INFO - Starting scraper
-2020-03-07 21:33:46,337 - INFO - Configuring browser
-2020-03-07 21:33:54,872 - INFO - Starting read csv
-2020-03-07 21:33:54,872 - INFO - Reading csv file: Transactions_09_03_2020.csv
-2020-03-07 21:33:54,883 - INFO - Processing data
-2020-03-07 21:33:54,923 - INFO - Connecting to database
-2020-03-07 21:33:55,123 - INFO - Inserting data into database
-2020-03-07 21:33:56,793 - INFO - Removing csv file
-2020-03-07 21:36:28,544 - INFO - Starting read csv
-2020-03-07 21:36:28,545 - INFO - Reading csv file: Transactions_09_03_2020.csv
-2020-03-07 21:36:28,556 - INFO - Processing data
-2020-03-07 21:36:28,595 - INFO - Connecting to database
-2020-03-07 21:36:28,809 - INFO - Inserting data into database
-2020-03-07 21:36:30,324 - INFO - Removing csv file
-2020-03-07 21:39:03,422 - INFO - Starting read csv
-2020-03-07 21:39:03,423 - INFO - Reading csv file: Transactions_09_03_2020.csv
-2020-03-07 21:39:03,433 - INFO - Processing data
-2020-03-07 21:39:36,103 - INFO - Starting read csv
-2020-03-07 21:39:36,103 - INFO - Reading csv file: Transactions_09_03_2020.csv
-2020-03-07 21:39:36,108 - INFO - Processing data
-2020-03-07 21:41:13,386 - INFO - Starting read csv
-2020-03-07 21:41:13,387 - INFO - Reading csv file: Transactions_09_03_2020.csv
-2020-03-07 21:41:13,392 - INFO - Processing data
-2020-03-07 21:41:13,446 - INFO - Connecting to database
-2020-03-07 21:41:13,666 - INFO - Inserting data into database
-2020-03-07 21:41:15,296 - INFO - Removing csv file
-2020-03-07 21:41:39,561 - INFO - Starting scraper
-2020-03-07 21:41:39,561 - INFO - Configuring browser
-2020-03-07 21:41:50,200 - INFO - Logging in
-2020-03-07 21:41:53,628 - INFO - Downloading
-2020-03-07 21:41:54,668 - INFO - Download finished
-2020-03-07 21:41:59,669 - INFO - Starting read csv
-2020-03-07 21:41:59,671 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
-2020-03-07 21:41:59,683 - INFO - Processing data
-2020-03-07 21:41:59,700 - INFO - Connecting to database
-2020-03-07 21:41:59,906 - INFO - Inserting data into database
-2020-03-07 21:42:02,556 - INFO - Removing csv file
+2020-03-08 00:21:36,053 - INFO - Starting scraper
+2020-03-08 00:21:36,055 - INFO - Configuring browser
+2020-03-08 00:21:47,359 - INFO - Logging in
+2020-03-08 00:21:50,042 - INFO - Downloading
+2020-03-08 00:21:50,979 - INFO - Download finished
+2020-03-08 00:21:55,979 - INFO - Starting read csv
+2020-03-08 00:21:55,979 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
+2020-03-08 00:21:55,993 - INFO - Processing data
+2020-03-08 00:21:56,018 - INFO - Connecting to database
+2020-03-08 00:21:56,210 - INFO - Inserting data into database
+2020-03-08 00:21:59,109 - INFO - Removing csv file
+2020-03-08 00:30:17,406 - INFO - Starting scraper
+2020-03-08 00:30:17,406 - INFO - Configuring browser
+2020-03-08 00:30:27,940 - INFO - Logging in
+2020-03-08 00:30:31,061 - INFO - Downloading
+2020-03-08 00:30:32,005 - INFO - Download finished
+2020-03-08 00:30:37,005 - INFO - Starting read csv
+2020-03-08 00:30:37,006 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
+2020-03-08 00:30:37,019 - INFO - Processing data
+2020-03-08 00:30:37,043 - INFO - Connecting to database
+2020-03-08 00:30:37,205 - INFO - Inserting data into database
+2020-03-08 00:30:39,900 - INFO - Removing csv file
+2020-03-08 13:48:27,060 - INFO - Starting scraper
+2020-03-08 13:48:27,074 - INFO - Configuring browser
+2020-03-08 13:48:38,687 - INFO - Logging in
+2020-03-08 13:48:42,084 - INFO - Downloading
+2020-03-08 13:48:43,073 - INFO - Download finished
+2020-03-08 13:48:48,074 - INFO - Starting read csv
+2020-03-08 13:48:48,075 - INFO - Reading csv file: 302-970 0258848_transaction_09_03_2020.csv
+2020-03-08 13:48:48,094 - INFO - Processing data
+2020-03-08 13:48:48,116 - INFO - Connecting to database
+2020-03-08 13:48:48,330 - INFO - Inserting data into database
+2020-03-08 13:48:51,020 - INFO - Removing csv file

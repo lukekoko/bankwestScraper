@@ -67,7 +67,8 @@ def readCSV():
         'WDL': 'Debit', 
         'DEP': 'Credit',
         'WDI': 'Debit',
-        'PAY': 'Credit'
+        'PAY': 'Credit',
+        'DAU': 'Authorisation'
     }
     for file in csvFiles:
         logger.info('Reading csv file: {}'.format(str(file).split('\\')[1]))
@@ -99,6 +100,8 @@ def readCSV():
 def transactionTypeCheck(row):
     # checking for type of transaction
     if (row['transactionType'] == 'Debit'):
+        return row['Debit']
+    elif (row['transactionType'] == 'Authorisation'):
         return row['Debit']
     else:
         return row['Credit']

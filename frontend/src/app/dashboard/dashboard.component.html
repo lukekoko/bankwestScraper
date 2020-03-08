@@ -1,2 +1,43 @@
-<!-- <button mat-raised-button color="primary" [routerLink]="['/transactions']"> Transactions </button> -->
-<h1>Todo</h1>
+<div align='center'>
+  <mat-grid-list cols="3" rowHeight="50px"  style="width: 20%;">
+    <mat-grid-tile>
+      <button mat-icon-button (click)='changeMonth(-1)'>
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-chip (click)='resetDate()'>{{months[date.getMonth()] + " " + date.getFullYear()}}</mat-chip>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button mat-icon-button (click)='changeMonth(1)'>
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+<mat-grid-list cols="2" rowHeight="50px">
+  <mat-grid-tile>
+    <mat-chip-list>
+      Monthly earnings: <mat-chip style="background-color: lightgreen;">${{monthlyEarnTotal}}</mat-chip>
+      Monthly spending: <mat-chip style="background-color: lightcoral;">${{monthlySpendTotal}}</mat-chip>
+    </mat-chip-list>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-chip-list>
+      Yearly earnings: <mat-chip style="background-color: lightgreen;">${{yearlyEarnTotal}}</mat-chip>
+      Yearly spending: <mat-chip style="background-color: lightcoral;">${{yearlySpendTotal}}</mat-chip>
+    </mat-chip-list>
+  </mat-grid-tile>
+  <mat-grid-tile [rowspan]=12>
+    <canvas baseChart [data]="monthlyPieChartData" [labels]="pieChartLabels" chartType="pie" [options]="pieChartOptions"
+      [plugins]="pieChartPlugins" [colors]="pieChartColors" legend=true>
+    </canvas>
+  </mat-grid-tile>
+  <mat-grid-tile [rowspan]=12>
+    <canvas baseChart [data]="yearlyPieChartData" [labels]="pieChartLabels" chartType="pie" [options]="pieChartOptions"
+      [plugins]="pieChartPlugins" [colors]="pieChartColors" legend=true>
+    </canvas>
+  </mat-grid-tile>
+</mat-grid-list>

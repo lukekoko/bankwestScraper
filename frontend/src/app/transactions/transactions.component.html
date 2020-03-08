@@ -8,13 +8,16 @@
     <mat-label>transaction type</mat-label>
     <mat-select (selectionChange)="typeFilter($event.value)" value=''>
       <mat-option value=''>
-        Both
+        All
       </mat-option>
       <mat-option value='debit'>
         Debit
       </mat-option>
       <mat-option value='credit'>
         Credit
+      </mat-option>
+      <mat-option value='authorisation'>
+        Authorisation
       </mat-option>
     </mat-select>
   </mat-form-field>

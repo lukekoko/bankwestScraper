@@ -12,10 +12,16 @@ __Webscraper__
 * Selenium
 * Pandas
 
+`python scraper.py`
+
 __API__
 * Python
 * FastAPI
 * SQLAlchemy
 
+`uvicorn main:app --reload`
+
 __Frontend__
 * Angular
+
+`ng serve`

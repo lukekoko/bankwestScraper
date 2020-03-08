@@ -5,7 +5,6 @@ import schemas
 import datetime
 
 def get_transactions(db: Session, transactionType: str = None, startDate: datetime.date = None, endDate: datetime.date = None):
-    print(transactionType)
     transactions = db.query(models.Transactions)
     if (transactionType is not None and (transactionType.lower() == "debit" or transactionType.lower() == 'credit')):
         transactions = transactions.filter(models.Transactions.transactionType == transactionType)

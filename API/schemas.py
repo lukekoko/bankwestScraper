@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 from pydantic import BaseModel
 
@@ -10,7 +10,7 @@ class TransactionBase(BaseModel):
     description: str
     transactionType: str
     balance: float
-    transactionAmount: float
+    transactionAmount: Optional[float] = ...
 
 class Transaction(TransactionBase):
     id: int

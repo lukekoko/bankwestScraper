@@ -44,7 +44,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { SubscriptionsComponent } from './subscriptions/subscriptions.component';
 import { SettingsComponent } from './settings/settings.component';
 import { TransactionDialogComponent } from './transactions/transaction-dialog/transaction-dialog.component';
-
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -60,6 +60,7 @@ import { TransactionDialogComponent } from './transactions/transaction-dialog/tr
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ChartsModule,
     MatNativeDateModule,
     MatCheckboxModule,
     MatCheckboxModule,
